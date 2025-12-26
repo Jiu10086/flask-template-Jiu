@@ -21,7 +21,7 @@ def fav_sports():
 
 @app.route('/favorite/food')
 def fav_food():
-  foods = ['ไข่ดาว','ไข่เจียว','ไข่แมว']
+  foods = ['ไข่ดาว','ไข่เจียว','ไข่แมว','ไข่แมว Pro Max','ไข่แมว Ultra max ']
   return render_template('favorite_food.html',
                          title='My Favorite Food Page',
                          foods = foods)
