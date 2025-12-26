@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+  {{title}}
+{% endblock %}
+
+{% block content %}
+  <h1>{{title}}</h1>
+  <hr>
+  <h2>My Favorite Movies</h2>
+  
+  {% for movie in movies %}
+      <h3>{{ loop.index }}. {{ movie }}</h3>
+  {% endfor %}
+{% endblock %}

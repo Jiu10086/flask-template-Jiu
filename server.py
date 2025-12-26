@@ -27,5 +27,12 @@ def fav_food():
                          foods = foods)
 
 
+@app.route('/favorite/movie')
+def movies():
+  movies = ['วันนี้วันไหนยังไงก็เธอ','ตำนานจั้งไห่','แอบรักให้เธอรู้','มาราธอน','รักแห่งสยาม']
+  return render_template('favorite_movie.html',
+                         title='My Favorite Movies Page',
+                         movies = movies)
+
 if __name__ == '__main__':
   app.run(debug=True)
